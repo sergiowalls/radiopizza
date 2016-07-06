@@ -44,7 +44,7 @@ header {
 #content {
 	width: 80%;
 	margin: auto;
-	text-align: center;
+	text-align: justify;
 	margin-top: 10px;
 }
 
@@ -63,20 +63,38 @@ footer {
 	width: 80%;
 }
 
+#submenu {
+	margin: 0;
+	padding-left: 0;
+	display: none;
+}
+
+
 .item {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	position: relative;
-	top: -16px;
-	font-size: 25px;
+	top: -10px;
+	font-size: 20px;
 	font-family: Arial;
 	font-weight: bold;
 	background: #ebebeb;
 	float: left;
 	list-style-type: none;
 	width: 18%;
-	text-align: center;
 	box-shadow: -10px 0px 5px #87000f;
+	color: black;
+}
+
+.subitem {
+	position: relative;
+	font-size: 16px;
+	font-family: Arial;
+	font-weight: bold;
+	text-decoration: initial;
+	background: #ebebeb;
+	list-style-type: none;
+	text-align: center;
 	color: black;
 }
 
@@ -84,7 +102,27 @@ footer {
 	color: red;
 }
 
+.subitem:hover {
+	color: red;
+}
+
+#cv:hover > #submenu {
+	display: inline;
+}
+
 nav {
 	display:inline-block;
 	width: 70%;
+}
+
+p {
+	text-align: justify;
+}
+
+#prefooter > p {
+	text-align: center;
+}
+
+ul > a {
+	text-decoration: none;
 }

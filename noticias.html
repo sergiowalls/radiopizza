@@ -2,9 +2,33 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>pizzaCat</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 </head>
-<body>
-	
+
+<body ng-app>
+	<div ng-include = "'header.html'"></div>
+	<div id = "content">
+		<h1>En Nueva Zelanda prueban a repartir pizzas con robots</h1>
+		
+		<ul>
+			<li>Quiere llevarlo a cabo con vehiculos robotizados llamados DRU.</li>
+			<li>Utilizan GPS para desplazarse por la ciudad y llegar hasta los destinos de los clientes a una velocidad máxima de 18 kilómetros por hora.</li>
+		</ul>
+		<hr>
+		<p>El Gobierno de Nueva Zelanda negocia con Domino's Pizza para hacer en el país las pruebas con los vehículos autónomos que esta cadena ha desarrollado para hacer el reparto de pizzas a domicilio, informaron fuentes oficiales.</p>
+		<h2>Cómo funciona</h2>
+		<p>Estos vehículos, llamados DRU, tienen compartimentos para las pizzas y las bebidas, y utilizan GPS para desplazarse por la ciudad y llegar hasta los destinos de los clientes a una velocidad máxima de 18 kilómetros por hora.</p>
+		<p>El país oceánico ha sido uno de los primeros considerados por la empresa para probar los prototipos de estas unidades robóticas.</p>
+		<p>El ministro neozelandés de Transporte, Simon Bridges, destacó en un comunicado que la elección de Nueva Zelanda "muestra que tenemos los marcos adecuados para atraer innovaciones".</p>
+		<h2>Qué dice la ley</h2>
+		<p>Bridges aseguró que las leyes y marcos de regulación actuales hacen de Nueva Zelanda un "entorno ideal" para hacer pruebas con todo tipo de tecnologías. El ministro recordó que en el último año el ejecutivo ha aprobado una regulación para el uso de vehículos aéreos autónomos y ha revisado las leyes de vehículos sin conductores.</p>
+		<p>Domino's, que ha realizado pruebas en Australia de forma semiautónoma, también espera comenzar a utilizar estos vehículos en Brisbane, informó por su parte el diario "The Australian".</p>
+
+		<img src="img/robotpizza.jpg" title="Robot repartiendo pizza">
+
+	</div>
+	<div ng-include = "'footer.html'"></div>
 </body>
 </html>
