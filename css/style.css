@@ -21,11 +21,20 @@ header {
 }
 
 #prefooter {
+	color: white;
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
 	height: 50px;
 	width: 100%;
 	background: #87000f;
 	position: relative;
 }
+
+#prefooter p {
+	padding-top: 10px;
+}
+
 #footer {
 	height: 330px;
 	width: 100%;
