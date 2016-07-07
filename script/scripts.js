@@ -13,7 +13,12 @@ var imagenes = [
 "img/pizza12.jpg",
 "img/pizza13.jpg",
 "img/pizza14.jpg",
-"img/pizza15.jpg"
+"img/pizza15.jpg",
+"img/pizza16.jpg",
+"img/pizza17.jpg",
+"img/pizza18.jpg",
+"img/pizza19.jpg",
+"img/pizza20.jpg"
 ];
 
 var imagenActual;
@@ -35,7 +40,7 @@ function fotoIzquierda() {
 }
 
 function fotoDerecha() {
-	if (imagenActual < 7) {
+	if (imagenActual < 19) {
 		++imagenActual;
 		contenedor.style.backgroundImage = "url("+imagenes[imagenActual]+")";
 	}
