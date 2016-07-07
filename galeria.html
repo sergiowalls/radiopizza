@@ -4,18 +4,45 @@
 	<meta charset="UTF-8">
 	<title>pizzaCat</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script type="text/javascript" src="script/scripts.js"></script>
 </head>
 
 <body ng-app>
-<div ng-include = "'header.html'"></div>
-<div id = "contentGaleria">
-	<div id = "borde" onclick="fotoIzquierda();"></div>
-	<div id = "fotoGrande"></div>
-	<div id = "borde" onclick="fotoDerecha();"></div>
-</div>
-<div id = "fotosAbajo"></div>
-<div ng-include = "'footer.html'"></div>
+	<div ng-include = "'header.html'"></div>
+	<div id = "contentGaleria">
+		<div id = "borde" onclick="fotoIzquierda();">&lt</div>
+		<div id = "fotoGrande"></div>
+		<div id = "borde" onclick="fotoDerecha();">&gt</div>
+		<div id = "fila2">
+		<div id = "borde2" onclick="tiraIzquierda();">&lt</div>
+			<div id = "fotosAbajo">
+				<img class="miniatura" src="img/miniaturas/pizza1.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza2.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza3.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza4.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza5.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza6.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza7.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza8.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza9.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza10.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza11.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza12.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza13.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza14.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza15.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza16.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza17.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza18.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza19.jpg">
+				<img class="miniatura" src="img/miniaturas/pizza20.jpg">
+			</div>
+			<div id = "borde2" onclick="tiraDerecha();">&gt</div>
+		</div>
+	</div>
+
+	<div ng-include = "'footer.html'"></div>
 </body>
 </html>
