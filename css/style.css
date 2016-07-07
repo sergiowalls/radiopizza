@@ -153,3 +153,11 @@ ul > a {
 	width: 500px;
 	background: url("../img/pizza1.jpg");
 }
+
+#fotosAbajo{
+	height: 100px;
+	width: 700px;
+	position: relative;
+	margin: auto;
+	background: black;
+}
