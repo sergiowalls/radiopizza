@@ -2,9 +2,21 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>pizzaCat</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 </head>
-<body>
+
+<body ng-app>
+<div ng-include = "'header.html'"></div>
+<div id = "contentGaleria">
+	<div id = "borde"></div>
+	<div id = "fotoGrande">
+		<img src="img/pizza1.jpg" title="pizza">
+	</div>
+	<div id = "borde"></div>
 	
+</div>
+<div ng-include = "'footer.html'"></div>
 </body>
 </html>
