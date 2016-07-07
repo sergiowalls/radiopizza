@@ -24,39 +24,47 @@ var imagenes = [
 var imagenActual;
 var miniaturaActual;
 var contenedor;
+var miniaturas;
+var marcador;
 
 function init() {
 	console.log("init");
 	imagenActual = 0;
-	miniaturaActual = 0;
+	marcador = 0;
 	contenedor = document.getElementById("fotoGrande");
+	miniaturas = document.getElementsByClassName("miniatura");
+			miniaturas[0].style.opacity = 1;
 }
 
 function fotoIzquierda() {
 	if (imagenActual > 0) {
+		miniaturas[imagenActual].style.opacity = 0.5;
 		--imagenActual;
 		contenedor.style.backgroundImage = "url("+imagenes[imagenActual]+")";
+		miniaturas[imagenActual].style.opacity = 1;
 	}
 }
 
 function fotoDerecha() {
 	if (imagenActual < 19) {
+		miniaturas[imagenActual].style.opacity = 0.5;
 		++imagenActual;
 		contenedor.style.backgroundImage = "url("+imagenes[imagenActual]+")";
+		miniaturas[imagenActual].style.opacity = 1;
 	}
 }
 
 function tiraIzquierda() {
-	if (imagenActual > 0) {
-		--imagenActual;
-		contenedor.style.backgroundImage = "url("+imagenes[imagenActual]+")";
+	if (marcador > 0) {
+		--marcador;
+		miniaturas[marcador].style.display = "inline";
 	}
 }
 
 function tiraDerecha() {
-	if (imagenActual < 7) {
-		++imagenActual;
-		contenedor.style.backgroundImage = "url("+imagenes[imagenActual]+")";
+	if (marcador < 15) {
+		miniaturas[marcador].style.display = "none";
+		++marcador;
 	}
 }
 
