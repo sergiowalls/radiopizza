@@ -18,6 +18,7 @@ var puntuacio;
 var Microsoft;
 var	positionTOPm;
 var	positionLEFTm;
+var estaMicrosoft;
 
 function init() {
 	console.log("init");
@@ -44,6 +45,8 @@ function init() {
 	velocitat = 2000;
 	vidas = 3;
 	puntuacio = 0;
+	estaMicrosoft = false; 
+	Microsoft.style.display="none";
 }
 
 function canviarPosicioA(){
@@ -64,9 +67,17 @@ function canviarPosicioA(){
 			canviarPosicioA();
 		}
 	});
+	m = Math.floor(Math.random()*100);
+	if (m < 25){
+		if (estaMicrosoft==false) estaMicrosoft = true;
+		Microsoft.style.display = "block"
+
+	}
 }
 
 function canviarPosicioM(){
+	estaMicrosoft = false;
+	Microsoft.style.display = "none";
 	puntuacio += 200;
 	velocitat = 3200;
 	positionTOPm = Math.floor(Math.random()*80);
