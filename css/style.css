@@ -199,6 +199,13 @@ ul > a {
  	background: url("../img/img-androitor/robot.png");
  }
 
+ #imgMircrosoft{
+ 	height: 55px;
+ 	width: 50px;
+ 	position: relative;
+ 	background: url("../img/img-androitor/w1.png");
+ }
+
 #fotosAbajo > img {
 	float: left;
 	position: relative;
