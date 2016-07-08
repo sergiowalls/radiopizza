@@ -74,7 +74,10 @@ function tiraDerecha() {
 }
 
 function fotoMiniatura(i) {
-
+	miniaturas[imagenActual].style.opacity = 0.5;
+	imagenActual = i;
+	miniaturas[i].style.opacity = 1;
+	contenedor.style.backgroundImage = "url("+imagenes[i]+")";
 }
 
 
