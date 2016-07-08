@@ -1,3 +1,13 @@
+.derechos {
+	position: relative;
+	top: 10px;
+	margin-left: 10%;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 18px;
+	color: black;
+}
+
 .redonda {
 	position: relative;
 	top: 10px;
@@ -6,6 +16,17 @@
 	width: 60px;
 	height: 60px;
 	border-radius: 100%;
+}
+
+.creditos {
+	text-align: right;
+	position: relative;
+	top: 10px;
+	margin-right: 10%;
+	font-family: arial;
+	font-style: italic;
+	font-size: 18px;
+	color: white;
 }
 
 .caja {

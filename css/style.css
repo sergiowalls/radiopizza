@@ -142,26 +142,32 @@ ul > a {
 	float: left;
 }
 
-#borde{
+#borde1{
 	height: 500px;
-	position: relative;
 	width: 100px;
-	color: white;
-	font-size: 40px;
-	font-family: arial;
-	font-weight: bold;
-	text-align: center;
+	position: relative;
+	background: url("../img/borde1.jpg") no-repeat;
 }
 
 #borde2{
-	height: 100px;
-	position: relative;
+	height: 500px;
 	width: 100px;
-	color: white;
-	font-size: 30px;
-	font-family: arial;
-	font-weight: bold;
-	text-align: center;
+	position: relative;
+	background: url("../img/borde2.jpg");
+}
+
+#borde3{
+	height: 100px;
+	width: 100px;
+	position: relative;
+	background: url("../img/borde3.jpg");
+}
+
+#borde4{
+	height: 100px;
+	width: 100px;
+	position: relative;
+	background: url("../img/borde4.jpg");
 }
 
 #fotoGrande{
@@ -187,24 +193,24 @@ ul > a {
 	position: relative;
 }
 
- #imgApple{
- 	height: 80px;
- 	width: 80px;
- 	position: relative;
- }
- #imgRobot{
- 	width: 80px;
- 	height: 91px;
- 	position: relative;
- 	background: url("../img/img-androitor/robot.png");
- }
+#imgApple{
+	height: 80px;
+	width: 80px;
+	position: relative;
+}
+#imgRobot{
+	width: 80px;
+	height: 91px;
+	position: relative;
+	background: url("../img/img-androitor/robot.png");
+}
 
- #imgMircrosoft{
- 	height: 55px;
- 	width: 50px;
- 	position: relative;
- 	background: url("../img/img-androitor/w1.png");
- }
+#imgMircrosoft{
+	height: 55px;
+	width: 50px;
+	position: relative;
+	background: url("../img/img-androitor/w1.png");
+}
 
 #fotosAbajo > img {
 	float: left;
