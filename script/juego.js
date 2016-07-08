@@ -19,6 +19,7 @@ var Microsoft;
 var	positionTOPm;
 var	positionLEFTm;
 var estaMicrosoft;
+var tout;
 
 function init() {
 	console.log("init");
@@ -71,8 +72,14 @@ function canviarPosicioA(){
 	if (m < 25){
 		if (estaMicrosoft==false) estaMicrosoft = true;
 		Microsoft.style.display = "block"
-
+		tout = setTimeout(ocultame, 3000)
 	}
+}
+
+function ocultame () {
+	if (Microsoft.style.display == "block"){
+		Microsoft.style.display = "none";
+	}	
 }
 
 function canviarPosicioM(){
@@ -86,6 +93,7 @@ function canviarPosicioM(){
 	Microsoft.style.left = positionLEFTm + "%";
 	$("#imgRobot").stop().animate({top: positionTOPa-10 + "%", left: positionLEFTa + "%"},velocitat, function(){
 		vidas = vidas - 1;
+		clearTimeout(tout);
 		if (vidas == 0){
 			alert("Game Over. Puntuació: " +puntuacio+ ".");
 		}
