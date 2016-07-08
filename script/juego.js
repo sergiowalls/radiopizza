@@ -62,15 +62,17 @@ function canviarPosicioA(){
 	$("#imgRobot").stop().animate({top: positionTOPa-10 + "%", left: positionLEFTa + "%"},velocitat, function(){
 		vidas = vidas - 1;
 		if (vidas == 0){
-			alert("Game Over. Puntuació: " +puntuacio+ ".");
+			if (puntuacio < 300) alert("¡¡Eres un mierdas!!");
+			else alert("Game Over. Puntuación: " +puntuacio+ ".");
 		}
 		else{
+			puntuacio -= 100;
 			canviarPosicioA();
 		}
 	});
 	m = Math.floor(Math.random()*100);
-	if (m < 25){
-		if (estaMicrosoft==false) estaMicrosoft = true;
+	if (estaMicrosoft == false && m < 25){
+		estaMicrosoft = true;
 		Microsoft.style.display = "block"
 		tout = setTimeout(ocultame, 3000)
 	}
@@ -79,6 +81,7 @@ function canviarPosicioA(){
 function ocultame () {
 	if (Microsoft.style.display == "block"){
 		Microsoft.style.display = "none";
+		estaMicrosoft = false;
 	}	
 }
 
@@ -95,9 +98,11 @@ function canviarPosicioM(){
 		vidas = vidas - 1;
 		clearTimeout(tout);
 		if (vidas == 0){
-			alert("Game Over. Puntuació: " +puntuacio+ ".");
+			if (puntuacio < 300) alert("¡¡Eres un mierdas!!");
+			else alert("Game Over. Puntuación: " +puntuacio+ ".");
 		}
 		else{
+			puntuacio -= 100;
 			canviarPosicioA();
 		}
 	});
